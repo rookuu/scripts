@@ -12,7 +12,6 @@ A collection of my frequenly used scripts, stored on Git for easy access across 
 + Created:&emsp;&emsp;&emsp;&emsp; 08/09/2016  
 + Updated:&emsp; &emsp; &emsp; 09/09/2016 
 
-<br> 
 
 		__________                            
 		\______   \ ____   ____  ____   ____  
