@@ -6,12 +6,11 @@ A collection of my frequenly used scripts, stored on Git for easy access across 
 - recon : Automated reconnaissance script, runs various scans to speed up initial eumeration.
 
 ## recon
-+ Description:  Automated reconnaissance script, runs various scans to speed up initial eumeration.  
-+ Type:         Bash Script  
-+ Dependencies: N/A  
-+ Created:      08/09/2016  
-+ Updated:      09/09/2016 
-
++ Description: &emsp; &emsp; Automated reconnaissance script, runs various scans to speed up initial eumeration.  
++ Type: &emsp; &emsp; &emsp; &emsp; &nbsp;Bash Script  
++ Dependencies: &emsp; N/A  
++ Created:&emsp;&emsp;&emsp;&emsp; 08/09/2016  
++ Updated:&emsp; &emsp; &emsp; 09/09/2016 
 
 <br> 
 
