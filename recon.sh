@@ -12,8 +12,8 @@ echo ""
 log=False
 
 
-# argparsing
-while getopts ":l:u" opt; do
+# arg parsing
+while getopts ":l:uh" opt; do
 	case $opt in
 	    l)
 		echo "[*] Creating Direcotry $PWD/$2"
@@ -26,6 +26,19 @@ while getopts ":l:u" opt; do
 		echo "[*] UDP scanning is enabled."
 		echo
 		udp=True
+		;;
+	    h)
+		echo "Recon - Version 1.0"
+		echo
+		echo "Usage:"
+		echo "./recon.sh [-lh] [-l DIRECTORY]"
+		echo ""
+		echo "Options:"
+		echo "  -h		show this message and exit"
+		echo "  -l DIRECTORY	create a directory and store logs"
+		echo "  -u		enable UDP scanning. (VERY SLOW)"
+		echo
+		exit 1
 		;;
 	    \?)
 		echo "[!] Invalid options: -$OPTARG"
@@ -70,9 +83,12 @@ echo ""
 echo "[?] Target IP?"
 read ip
 echo
-echo "[*] Creating Directory $PWD/$2/$ip"
-mkdir $PWD/$2/$ip
-echo
+
+if [ "$log" = 'True' ]; then
+	echo "[*] Creating Directory $PWD/$2/$ip"
+	mkdir $PWD/$2/$ip
+	echo
+fi
 
 echo "[*] Running quick nmap scan - $ip"
 qnmap=$(nmap $ip -T5)

@@ -5,15 +5,31 @@ A collection of my frequenly used scripts, stored on Git for easy access across 
 ## Index
 - recon : Automated reconnaissance script, runs various scans to speed up initial eumeration.
 
-## Scripts
-### recon
+## recon
+Description: Automated reconnaissance script, runs various scans to speed up initial eumeration.
+
 Type: Bash Script
 
-Date: 08/09/2016
+Dependencies: N/A
 
-#### Usage
+Created: 08/09/2016
+
+Updated: 09/09/2016
+
+	__________                            
+	\______   \ ____   ____  ____   ____  
+	 |       _// __ \_/ ___\/  _ \ /    \ 
+	 |    |   \  ___/\  \__(  <_> )   |  \
+	 |____|_  /\___  >\___  >____/|___|  /
+		\/     \/     \/           \/ 
+
+	Recon - Version 1.0
+
+	Usage:
+	./recon.sh [-lh] [-l DIRECTORY]
+
 	Options:
-	  -h,		show this message and exit
-	  -l DIRECTORY	create the directory specified and use to store logs
-	  -u		enable UDP scanning. WARNING: Very slow
+	  -h		show this message and exit
+	  -l DIRECTORY	create a directory and store logs
+	  -u		enable UDP scanning. (VERY SLOW)
 
